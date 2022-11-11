@@ -10,8 +10,8 @@ def json_file_to_dict(file_path: str) -> dict:
     return
 
 
-def get_number_of_users() -> int:
-    '''Find users's count.
+def get_number_of_users(data: dict) -> int:
+    '''all users' data.
     
     Args:
         None
