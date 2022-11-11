@@ -1,3 +1,5 @@
+import json 
+
 def json_file_to_dict(file_path: str) -> dict:
     '''convert json to dict
     
@@ -7,7 +9,9 @@ def json_file_to_dict(file_path: str) -> dict:
     Returns:
         dict: dict data
     '''
-    return
+    data = open(file_path).read()
+    data_json = json.loads(data)
+    return data_json
 
 
 def get_number_of_users(data: dict) -> int:
@@ -19,7 +23,11 @@ def get_number_of_users(data: dict) -> int:
     Returns:
         int: number of all users.
     '''
-    return
+    sum = []
+    
+    return len  (data['users'])
+data = json_file_to_dict('data.json')
+print((get_number_of_users(data)))
 
 
 def get_all_countries(data: str) -> list:
