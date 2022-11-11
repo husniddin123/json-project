@@ -14,10 +14,34 @@ def get_number_of_users(data: dict) -> int:
     '''all users' data.
     
     Args:
-        None
+        data (dict): users data
     
     Returns:
         int: number of all users.
+    '''
+    return
+
+
+def get_all_countries(data: str) -> list:
+    '''all users' data.
+    
+    Args:
+        data (dict): users data
+    
+    Returns:
+        list: list of counrties
+    '''
+    return
+
+
+def get_all_users_fullname(data: str) -> list:
+    '''all users' data.
+    
+    Args:
+        data (dict): users data
+    
+    Returns:
+        list: list of all users' full name
     '''
     return
 
